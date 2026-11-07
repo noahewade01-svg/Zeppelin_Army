@@ -11,9 +11,9 @@ func _process(delta: float) -> void:
 	var velocity = Vector2.ZERO
 	
 	if Input.is_action_pressed("right"):
-		velocity.x -= 1
+		velocity.x = +1
 	if Input.is_action_pressed("left"):
-		velocity.x += 1
+		velocity.x -= 1
 	
 	if velocity.x > 0 and $AnimatedSprite2D.animation != "pixil-frame-1":
 		$AnimatedSprite2D.animation = "right"
@@ -35,3 +35,8 @@ func start(pos):
 	position = pos
 	show()
 	$CollisionShape2d.disabled = false
+
+
+func _on_area_entered(area: Area2D) -> void:
+	hide()
+	hit.emit()

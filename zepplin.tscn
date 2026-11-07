@@ -36,15 +36,18 @@ animations = [{
 size = Vector2(198, 250)
 
 [node name="zepplin" type="Area2D" unique_id=333670534]
+scale = Vector2(0.5, 0.5)
 script = ExtResource("1_ahv6m")
+speed = 300
 metadata/_edit_group_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=808029375]
 sprite_frames = SubResource("SpriteFrames_snryl")
-animation = &"left"
+animation = &"right"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=636085026]
 position = Vector2(0, -7)
 shape = SubResource("RectangleShape2D_snryl")
 
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
