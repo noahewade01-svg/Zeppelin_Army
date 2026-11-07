@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://c11mf1hga0dkh"]
+
+[ext_resource type="Script" uid="uid://cgur2wk84ala1" path="res://mob.gd" id="1_nokgg"]
+[ext_resource type="Texture2D" uid="uid://8ptgpf63yulq" path="res://mob/untitled-pixel-art@16x.png" id="2_ubaqv"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_snryl"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_ubaqv")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_crpnc"]
+size = Vector2(115, 195)
+
+[node name="Mob" type="Area2D" unique_id=164388112]
+collision_mask = 0
+script = ExtResource("1_nokgg")
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=235468267]
+sprite_frames = SubResource("SpriteFrames_snryl")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=554082505]
+position = Vector2(-8.5, -16.5)
+shape = SubResource("RectangleShape2D_crpnc")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="." unique_id=1503461681]
+
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]

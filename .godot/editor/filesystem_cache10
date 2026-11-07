@@ -1,0 +1,11 @@
+78098b89c88a74ebe8c20117b8754620
+::res://::1794029918
+mob.tscn::PackedScene::6652164033157653935::1794029638::0::1::::<><><>0<>0<><>::
+zepplin.gd::GDScript::171894862483137336::1794028070::0::1::::<>Area2D<><>0<>0<><>::
+zepplin.tscn::PackedScene::5310236957603810025::1794029621::0::1::::<><><>0<>0<><>::uid://cpjc3i47vlnk::::res://zepplin.gd<>uid://b6n14ihgyvc2l::::res://zepplin_our/pixil-frame-0-3.png<>uid://bx2h3tv1rcre5::::res://zepplin_our/pixil-frame-1.png<>uid://ddvhq1a1blntq::::res://zepplin_our/pixil-frame-2.png
+::res://mob/::1794029930
+untitled-pixel-art@16x.png::CompressedTexture2D::2348362641013114102::1794029930::1794029930::1::::<><><>0<>0<>46f24f11e77af590c7f64366263e952b<>res://.godot/imported/untitled-pixel-art@16x.png-6dced12f7db8e0e99b9aa6800c0b68d5.ctex::
+::res://zepplin_our/::1794022172
+pixil-frame-0-3.png::CompressedTexture2D::4590742608415997393::1794021783::1794021783::1::::<><><>0<>0<>5e63d15a07bf35c1e1c17115bcc6c6d4<>res://.godot/imported/pixil-frame-0-3.png-7cfc736887c582e54ed77d33999b369b.ctex::
+pixil-frame-1.png::CompressedTexture2D::4056978339494844810::1794022165::1794022165::1::::<><><>0<>0<>af7e122e76fe7856cbf75af802672807<>res://.godot/imported/pixil-frame-1.png-d08117ba2837c26f1d85ae0ab80c7e73.ctex::
+pixil-frame-2.png::CompressedTexture2D::7413635473270708338::1794022172::1794022172::1::::<><><>0<>0<>c5a04994b029fbd7fb844916c0a7a9f4<>res://.godot/imported/pixil-frame-2.png-92efeff388a68f1fc6c2a0a7adf07404.ctex::
