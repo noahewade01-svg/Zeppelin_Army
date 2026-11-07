@@ -1,5 +1,6 @@
-CanvasLayer
 Sprite2D
+CanvasLayer
+Node2D
 Parallax2D
 Area2D
 VisibleOnScreenNotifier2D
