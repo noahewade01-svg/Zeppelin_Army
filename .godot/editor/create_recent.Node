@@ -1,3 +1,6 @@
+CanvasLayer
+Sprite2D
+Parallax2D
 Area2D
 VisibleOnScreenNotifier2D
 CollisionShape2D

@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://c11mf1hga0dkh" path="res://mob.tscn" id="1_0xm2m"]
 [ext_resource type="Script" uid="uid://t25euob3p1mt" path="res://main.gd" id="1_h2yge"]
 [ext_resource type="PackedScene" uid="uid://chwk3d308m4oj" path="res://zepplin.tscn" id="2_h2yge"]
+[ext_resource type="Texture2D" uid="uid://dq4cl8jhb0eb7" path="res://assets/water.png" id="4_1bvp3"]
 
 [node name="Node2D" type="Node2D" unique_id=506319581]
 script = ExtResource("1_h2yge")
@@ -13,5 +14,13 @@ script = ExtResource("1_h2yge")
 position = Vector2(10, 286)
 
 [node name="Timer" type="Timer" parent="." unique_id=152659138]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1804766684]
+layer = -1
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer" unique_id=1970867629]
+position = Vector2(350, 280)
+scale = Vector2(50, 50)
+texture = ExtResource("4_1bvp3")
 
 [connection signal="timeout" from="Timer" to="." method="_on_mob_timer_timeout"]
